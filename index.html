@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div>
+        <div>
+            <img src="image/header.png" width="100%" height="200" alt="">
+        </div>
+        <div class="w3-container">
+            <h1>Mountain</h1>
+        </div>
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="menuMountain('pertama')">Alpend</button>
+            <button class="w3-bar-item w3-button" onclick="menuMountain('kedua')">Krakatoa</button>
+            <button class="w3-bar-item w3-button" onclick="menuMountain('ketiga')">Tambora</button>
+            <button class="w3-bar-item w3-button" onclick="menuMountain('keempat')">Fuji</button>
+        </div>
+        <div id="pertama" class="w3-container classMenu w3-animate-zoom">
+            <h2>Alpen</h2>
+            <img src="https://images.unsplash.com/photo-1519931760384-a96fedd8dfa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWxwc3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="mountain" width="300" height="180">
+        </div>
+        <div id="kedua" class="w3-container classMenu w3-animate-fading" style="display:none">
+            <h2>Krakatoa</h2>
+            <img src="https://images.theconversation.com/files/362457/original/file-20201008-22-5bqu3h.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" alt="mountain" width="300" height="180">
+        </div>
+        <div id="ketiga" class="w3-container classMenu w3-animate-top" style="display:none">
+            <h2>Tambora</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIKIAMmLGGM0xJ0z93UueMC_NYjTbflmVWImvjmpyypuEetlr9V_u94w-U9oZzcthnD7Q&usqp=CAU" alt="mountains width="300" height="180" morales">
+        </div>
+        <div id="keempat" class="w3-container classMenu w3-animate-bottom" style="display:none">
+            <h2>Fuji</h2>
+            <img src="http://d20aeo683mqd6t.cloudfront.net/articles/title_images/000/039/446/medium/oshino-hakkai-fujis1501321982.jpg?2021" alt="mountain" width="300" height="180">
+        </div>
+        <div>
+            <h4>Nama : Nurhafidz Muhamad Faizal</h4>
+            <h4>NIM  : 10121145 </h4>
+        </div>
+    </div>
+    <script>
+        function menuMountain(namakarakter) {
+         var i;
+         var x = document.getElementsByClassName("classMenu");
+         for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+         }
+         document.getElementById(namakarakter).style.display = "block";
+        }
+    </script>
+</body>
+</html>
